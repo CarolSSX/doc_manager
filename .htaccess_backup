@@ -1,0 +1,11 @@
+# Protezione della cartella "private.pem" e "public.pem"
+<FilesMatch "(private.pem|public.pem)">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Impedire l'accesso diretto alla cartella "signatures"
+<Directory "documents/signatures">
+    Order Allow,Deny
+    Deny from all
+</Directory>

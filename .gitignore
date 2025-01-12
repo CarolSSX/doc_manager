@@ -1,0 +1,7 @@
+# Ignora i file delle chiavi
+private.pem
+public.pem
+
+# Ignora le cartelle di firma e upload
+documents/uploads/
+documents/signatures/
